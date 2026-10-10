@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+    transition: o.3s;
+}
+/*header*/
+.header{
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header h1 {
+    font-size: 15px;
+
+}
+#themeBtn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    color: #222;
+    font-weight: bold;
+}
+/*Main container*/
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+
+}
+/*common section*/
+section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+/*date*/
+.date-section{
+    text-align: center;
+
+}
+#todayDate{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*Quote*/
+.quote-section{
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5;
+
+}
+/*Task form*/
+.task-section h2{
+    margin-bottom: 15px;
+}
+#task form{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+#taskInput{
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#taskTime{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#task form button{
+    padding: 12px 20px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+#taskForm button:hover{
+    background-color: #1d4ed8;
+
+}
+/*List header*/
+.list-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+#clearBtn{
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/*task list*/
+#task list{
+    list-style:none;
+
+}
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom:10px ;
+    border: 1px solid#ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+.task-content{
+    flex: 1;
+}
+.task-name{
+    font-size: 17px;
+    font-weight: bold;
+}
+.task-time{
+    margin-top: 5px;
+}
